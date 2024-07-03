@@ -86,7 +86,7 @@ Visualization Manager:
     Value: true
   - Class: rviz/Image
     Enabled: true
-    Image Topic: /usb_cam_behind/image_raw
+    Image Topic: /camera_behind/color/image_raw
     Max Value: 1
     Median window: 5
     Min Value: 0
@@ -99,7 +99,7 @@ Visualization Manager:
   - Class: rviz/Camera
     Enabled: true
     Image Rendering: background and overlay
-    Image Topic: /usb_cam_behind/image_raw
+    Image Topic: /camera_behind/color/image_raw
     Name: camera_behind-Camera
     Overlay Alpha: 0.5
     Queue Size: 2
@@ -111,7 +111,32 @@ Visualization Manager:
     Zoom Factor: 1
   - Class: rviz/Image
     Enabled: true
-    Image Topic: /usb_cam_top/image_raw
+    Image Topic: /camera_right/color/image_raw
+    Max Value: 1
+    Median window: 5
+    Min Value: 0
+    Name: camera_right-Image
+    Normalize Range: true
+    Queue Size: 2
+    Transport Hint: raw
+    Unreliable: false
+    Value: false
+  - Class: rviz/Camera
+    Enabled: true
+    Image Rendering: background and overlay
+    Image Topic: /camera_right/color/image_raw
+    Name: camera_right-Camera
+    Overlay Alpha: 0.5
+    Queue Size: 2
+    Transport Hint: raw
+    Unreliable: false
+    Value: false
+    Visibility:
+      Value: true
+    Zoom Factor: 1
+  - Class: rviz/Image
+    Enabled: true
+    Image Topic: /camera_top/color/image_raw
     Max Value: 1
     Median window: 5
     Min Value: 0
@@ -124,7 +149,7 @@ Visualization Manager:
   - Class: rviz/Camera
     Enabled: true
     Image Rendering: background and overlay
-    Image Topic: /usb_cam_top/image_raw
+    Image Topic: /camera_top/color/image_raw
     Name: camera_top-Camera
     Overlay Alpha: 0.5
     Queue Size: 2

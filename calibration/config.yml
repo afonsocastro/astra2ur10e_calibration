@@ -74,7 +74,7 @@ sensors:
     link: "camera_top_rgb_optical_frame"
     parent_link: "world"
     child_link: "camera_top_link"
-    topic_name: "/usb_cam_top/image_raw"
+    topic_name: "/camera_top/color/image_raw"
     modality: "rgb"
     throttle: 30
 
@@ -84,7 +84,15 @@ sensors:
     link: "camera_behind_rgb_optical_frame"
     parent_link: "world"
     child_link: "camera_behind_link"
-    topic_name: "/usb_cam_behind/image_raw"
+    topic_name: "/camera_behind/color/image_raw"
+    modality: "rgb"
+    throttle: 30
+
+  camera_right:
+    link: "camera_right_rgb_optical_frame"
+    parent_link: "world"
+    child_link: "camera_right_link"
+    topic_name: "/camera_right/color/image_raw"
     modality: "rgb"
     throttle: 30
 

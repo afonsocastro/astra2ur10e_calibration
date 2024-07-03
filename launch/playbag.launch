@@ -43,10 +43,13 @@
     <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
     <!-- Throttle topics -->
     <node pkg="topic_tools" type="throttle" name="throttler_camera_top"
-          args="messages /usb_cam_top/image_raw/compressed_to_throttle 30 /usb_cam_top/image_raw/compressed"/>
+          args="messages /camera_top/color/image_raw/compressed_to_throttle 30 /camera_top/color/image_raw/compressed"/>
     
     <node pkg="topic_tools" type="throttle" name="throttler_camera_behind"
-          args="messages /usb_cam_behind/image_raw/compressed_to_throttle 30 /usb_cam_behind/image_raw/compressed"/>
+          args="messages /camera_behind/color/image_raw/compressed_to_throttle 30 /camera_behind/color/image_raw/compressed"/>
+    
+    <node pkg="topic_tools" type="throttle" name="throttler_camera_right"
+          args="messages /camera_right/color/image_raw/compressed_to_throttle 30 /camera_right/color/image_raw/compressed"/>
     
     <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
     <!-- Load robot description and tf generators -->
@@ -60,7 +63,7 @@
 
     <!-- Play atom bag file adding tfs robot_state_publisher  -->
     <node pkg="rosbag" type="play" name="rosbag_play" output="screen"
-              args=" $(arg bag_file) --clock -r $(arg bag_rate) -l -s $(arg bag_start) -d 2 /usb_cam_top/image_raw/compressed:=/usb_cam_top/image_raw/compressed_to_throttle /usb_cam_behind/image_raw/compressed:=/usb_cam_behind/image_raw/compressed_to_throttle"/>
+              args=" $(arg bag_file) --clock -r $(arg bag_rate) -l -s $(arg bag_start) -d 2 /camera_top/color/image_raw/compressed:=/camera_top/color/image_raw/compressed_to_throttle /camera_behind/color/image_raw/compressed:=/camera_behind/color/image_raw/compressed_to_throttle /camera_right/color/image_raw/compressed:=/camera_right/color/image_raw/compressed_to_throttle"/>
     <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
 
     <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->

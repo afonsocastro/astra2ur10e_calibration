@@ -43,6 +43,26 @@
         args="-ss camera_top -st camera_behind -wf world -train_json $(arg train_json) -test_json $(arg test_json) -csf '$(arg csf)' -sfr" 
         output="screen"/>
 
+    <node type="rgb_to_rgb_evaluation" pkg="atom_evaluation" 
+        name="camera_top_to_camera_right_pattern_1_evaluation"
+        args="-ss camera_top -st camera_right -train_json $(arg train_json) -test_json $(arg test_json) -csf '$(arg csf)' -sfr" 
+        output="screen"/>
+
+    <node type="inter_collection_rgb_to_rgb_evaluation" pkg="atom_evaluation" 
+        name="inter_collection_camera_top_to_camera_right_pattern_1_evaluation"
+        args="-ss camera_top -st camera_right -wf world -train_json $(arg train_json) -test_json $(arg test_json) -csf '$(arg csf)' -sfr" 
+        output="screen"/>
+
+    <node type="rgb_to_rgb_evaluation" pkg="atom_evaluation" 
+        name="camera_behind_to_camera_right_pattern_1_evaluation"
+        args="-ss camera_behind -st camera_right -train_json $(arg train_json) -test_json $(arg test_json) -csf '$(arg csf)' -sfr" 
+        output="screen"/>
+
+    <node type="inter_collection_rgb_to_rgb_evaluation" pkg="atom_evaluation" 
+        name="inter_collection_camera_behind_to_camera_right_pattern_1_evaluation"
+        args="-ss camera_behind -st camera_right -wf world -train_json $(arg train_json) -test_json $(arg test_json) -csf '$(arg csf)' -sfr" 
+        output="screen"/>
+
     <node type="inter_collection_rgb_to_rgb_evaluation" pkg="atom_evaluation" 
         name="inter_collection_camera_top_to_camera_top_pattern_1_evaluation"
         args="-ss camera_top -st camera_top -wf world -train_json $(arg train_json) -test_json $(arg test_json) -csf '$(arg csf)' -sfr" 
@@ -53,9 +73,24 @@
         args="-ss camera_behind -st camera_behind -wf world -train_json $(arg train_json) -test_json $(arg test_json) -csf '$(arg csf)' -sfr" 
         output="screen"/>
 
+    <node type="inter_collection_rgb_to_rgb_evaluation" pkg="atom_evaluation" 
+        name="inter_collection_camera_right_to_camera_right_pattern_1_evaluation"
+        args="-ss camera_right -st camera_right -wf world -train_json $(arg train_json) -test_json $(arg test_json) -csf '$(arg csf)' -sfr" 
+        output="screen"/>
+
     <node type="rgb_to_rgb_evaluation" pkg="atom_evaluation" 
         name="camera_top_to_camera_behind_pattern_2_evaluation"
         args="-ss camera_top -st camera_behind -train_json $(arg train_json) -test_json $(arg test_json) -csf '$(arg csf)' -sfr" 
+        output="screen"/>
+
+    <node type="rgb_to_rgb_evaluation" pkg="atom_evaluation" 
+        name="camera_top_to_camera_right_pattern_2_evaluation"
+        args="-ss camera_top -st camera_right -train_json $(arg train_json) -test_json $(arg test_json) -csf '$(arg csf)' -sfr" 
+        output="screen"/>
+
+    <node type="rgb_to_rgb_evaluation" pkg="atom_evaluation" 
+        name="camera_behind_to_camera_right_pattern_2_evaluation"
+        args="-ss camera_behind -st camera_right -train_json $(arg train_json) -test_json $(arg test_json) -csf '$(arg csf)' -sfr" 
         output="screen"/>
 
     

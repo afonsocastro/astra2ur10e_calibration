@@ -38,7 +38,7 @@
     <selfCollide>false</selfCollide>
   </gazebo>
   <joint name="gantry_to_gantry_gantry" type="fixed">
-    <origin xyz="0.0 0.0 2.29" rpy="0.0 0.0 0.0"/>
+    <origin xyz="0.0 0.0 2.355" rpy="0.0 0.0 0.0"/>
     <parent link="gantry"/>
     <child link="gantry_gantry"/>
   </joint>
@@ -71,7 +71,7 @@
     <selfCollide>true</selfCollide>
   </gazebo>
   <joint name="gantry_to_leg1" type="fixed">
-    <origin xyz="-1.91 1.4 0.0" rpy="0.0 0.0 0.0"/>
+    <origin xyz="-2.09 1.39875 0.065" rpy="0.0 0.0 0.0"/>
     <parent link="gantry"/>
     <child link="leg1_gantry"/>
   </joint>
@@ -104,7 +104,7 @@
     <selfCollide>true</selfCollide>
   </gazebo>
   <joint name="gantry_to_leg2" type="fixed">
-    <origin xyz="2.0 1.4 0.0" rpy="0.0 0.0 0.0"/>
+    <origin xyz="2.0 1.39875 0.065" rpy="0.0 0.0 0.0"/>
     <parent link="gantry"/>
     <child link="leg2_gantry"/>
   </joint>
@@ -137,7 +137,7 @@
     <selfCollide>true</selfCollide>
   </gazebo>
   <joint name="gantry_to_leg3" type="fixed">
-    <origin xyz="2.0 -1.49 0.0" rpy="0.0 0.0 0.0"/>
+    <origin xyz="2.0 -1.48875 0.065" rpy="0.0 0.0 0.0"/>
     <parent link="gantry"/>
     <child link="leg3_gantry"/>
   </joint>
@@ -170,7 +170,7 @@
     <selfCollide>true</selfCollide>
   </gazebo>
   <joint name="gantry_to_leg4" type="fixed">
-    <origin xyz="-1.91 -1.49 0.0" rpy="0.0 0.0 0.0"/>
+    <origin xyz="-2.09 -1.48875 0.065" rpy="0.0 0.0 0.0"/>
     <parent link="gantry"/>
     <child link="leg4_gantry"/>
   </joint>
@@ -203,7 +203,7 @@
     <selfCollide>true</selfCollide>
   </gazebo>
   <joint name="leg1_gantry_to_bigbeam1" type="fixed">
-    <origin xyz="-0.5 0.0 2.29" rpy="0.0 0.0 0.0"/>
+    <origin xyz="-0.315 0.0 2.29" rpy="0.0 0.0 0.0"/>
     <parent link="leg1_gantry"/>
     <child link="bigbeam1_gantry"/>
   </joint>
@@ -236,7 +236,7 @@
     <selfCollide>true</selfCollide>
   </gazebo>
   <joint name="leg4_gantry_to_bigbeam2" type="fixed">
-    <origin xyz="-0.5 0.0 2.29" rpy="0.0 0.0 0.0"/>
+    <origin xyz="-0.315 0.0 2.29" rpy="0.0 0.0 0.0"/>
     <parent link="leg4_gantry"/>
     <child link="bigbeam2_gantry"/>
   </joint>
@@ -269,7 +269,7 @@
     <selfCollide>true</selfCollide>
   </gazebo>
   <joint name="bigbeam1_gantry_to_smallbeam1" type="fixed">
-    <origin xyz="0.59 -3.3449999999999998 0.09" rpy="0.0 0.0 0.0"/>
+    <origin xyz="0.41000000000000003 -3.2575 0.09" rpy="0.0 0.0 0.0"/>
     <parent link="bigbeam1_gantry"/>
     <child link="smallbeam1_bigbeam1_gantry"/>
   </joint>
@@ -302,7 +302,7 @@
     <selfCollide>true</selfCollide>
   </gazebo>
   <joint name="bigbeam1_gantry_to_smallbeam2" type="fixed">
-    <origin xyz="4.5 -3.3449999999999998 0.09" rpy="0.0 0.0 0.0"/>
+    <origin xyz="4.5 -3.2575 0.09" rpy="0.0 0.0 0.0"/>
     <parent link="bigbeam1_gantry"/>
     <child link="smallbeam2_bigbeam1_gantry"/>
   </joint>
@@ -335,7 +335,7 @@
     <selfCollide>true</selfCollide>
   </gazebo>
   <joint name="bigbeam1_gantry_to_rectangularbeam1" type="fixed">
-    <origin xyz="1.455 -2.8 0.0" rpy="0.0 1.5707963267948966 0.0"/>
+    <origin xyz="1.435 -3.0075 0.0" rpy="0.0 1.5707963267948966 0.0"/>
     <parent link="bigbeam1_gantry"/>
     <child link="rectangularbeam1_gantry"/>
   </joint>
@@ -368,7 +368,7 @@
     <selfCollide>true</selfCollide>
   </gazebo>
   <joint name="bigbeam1_gantry_to_rectangularbeam2" type="fixed">
-    <origin xyz="2.455 -2.8 0.0" rpy="0.0 1.5707963267948966 0.0"/>
+    <origin xyz="2.425 -3.0075 0.0" rpy="0.0 1.5707963267948966 0.0"/>
     <parent link="bigbeam1_gantry"/>
     <child link="rectangularbeam2_gantry"/>
   </joint>
@@ -401,7 +401,7 @@
     <selfCollide>true</selfCollide>
   </gazebo>
   <joint name="bigbeam1_gantry_to_rectangularbeam3" type="fixed">
-    <origin xyz="3.455 -2.8 0.0" rpy="0.0 1.5707963267948966 0.0"/>
+    <origin xyz="3.425 -3.0075 0.0" rpy="0.0 1.5707963267948966 0.0"/>
     <parent link="bigbeam1_gantry"/>
     <child link="rectangularbeam3_gantry"/>
   </joint>
@@ -624,7 +624,7 @@
     <axis xyz="0.0 0.0 1.0"/>
     <parent link="base_link_inertia"/>
     <child link="shoulder_link"/>
-    <limit effort="330.0" lower="-2.356194490192345" upper="2.356194490192345" velocity="2.0943951023931953"/>
+    <limit effort="330.0" lower="-2.6179938779914944" upper="2.6179938779914944" velocity="2.0943951023931953"/>
     <dynamics damping="0.0" friction="0.0"/>
   </joint>
   <joint name="shoulder_lift_joint" type="revolute">
@@ -632,7 +632,7 @@
     <axis xyz="0.0 0.0 1.0"/>
     <parent link="shoulder_link"/>
     <child link="upper_arm_link"/>
-    <limit effort="330.0" lower="-2.2689280275926285" upper="-0.6981317007977318" velocity="3.141592653589793"/>
+    <limit effort="330.0" lower="-2.6179938779914944" upper="-0.5235987755982988" velocity="3.141592653589793"/>
     <dynamics damping="0.0" friction="0.0"/>
   </joint>
   <joint name="elbow_joint" type="revolute">
@@ -640,7 +640,7 @@
     <axis xyz="0.0 0.0 1.0"/>
     <parent link="upper_arm_link"/>
     <child link="forearm_link"/>
-    <limit effort="150.0" lower="0.8726646259971648" upper="2.6179938779914944" velocity="3.141592653589793"/>
+    <limit effort="150.0" lower="0.0" upper="2.9670597283903604" velocity="3.141592653589793"/>
     <dynamics damping="0.0" friction="0.0"/>
   </joint>
   <joint name="wrist_1_joint" type="revolute">
@@ -648,7 +648,7 @@
     <axis xyz="0.0 0.0 1.0"/>
     <parent link="forearm_link"/>
     <child link="wrist_1_link"/>
-    <limit effort="56.0" lower="-2.792526803190927" upper="-1.3962634015954636" velocity="3.141592653589793"/>
+    <limit effort="56.0" lower="-4.71238898038469" upper="0.0" velocity="3.141592653589793"/>
     <dynamics damping="0.0" friction="0.0"/>
   </joint>
   <joint name="wrist_2_joint" type="revolute">
@@ -656,7 +656,7 @@
     <axis xyz="0.0 0.0 1.0"/>
     <parent link="wrist_1_link"/>
     <child link="wrist_2_link"/>
-    <limit effort="56.0" lower="-2.2689280275926285" upper="-0.8726646259971648" velocity="3.141592653589793"/>
+    <limit effort="56.0" lower="-3.141592653589793" upper="0.0" velocity="3.141592653589793"/>
     <dynamics damping="0.0" friction="0.0"/>
   </joint>
   <joint name="wrist_3_joint" type="revolute">
@@ -664,7 +664,7 @@
     <axis xyz="0.0 0.0 1.0"/>
     <parent link="wrist_2_link"/>
     <child link="wrist_3_link"/>
-    <limit effort="56.0" lower="-2.443460952792061" upper="1.7453292519943295" velocity="3.141592653589793"/>
+    <limit effort="56.0" lower="-3.141592653589793" upper="3.141592653589793" velocity="3.141592653589793"/>
     <dynamics damping="0.0" friction="0.0"/>
   </joint>
   <link name="base"/>
@@ -691,7 +691,7 @@
     <child link="base_link"/>
   </joint>
   <joint name="camera_behind_rgb_joint" type="fixed">
-    <origin xyz="0.8481721310949765 1.224365708088931 2.3511875266550333" rpy="-0.19718554582052114 0.5342533504487207 -1.8821968275695813"/>
+    <origin xyz="0.8657309349506475 1.1745325907498732 2.358947641663387" rpy="-0.3369602512178866 0.551670213972371 -1.9437147020481422"/>
     <parent link="world"/>
     <child link="camera_behind_link"/>
   </joint>
@@ -763,7 +763,7 @@
     </sensor>
   </gazebo>
   <joint name="camera_top_rgb_joint" type="fixed">
-    <origin xyz="0.09511408182797733 0.14905972847160784 2.4330682231422602" rpy="-1.9962039976135075 1.491251777066553 -2.0400319820116386"/>
+    <origin xyz="0.05343866423636168 0.14922067354984486 2.4506180537580113" rpy="-1.9217149884618365 1.481938650857729 -2.0217732500248773"/>
     <parent link="world"/>
     <child link="camera_top_link"/>
   </joint>
@@ -824,6 +824,78 @@
         <cameraInfoTopicName>color/camera_info</cameraInfoTopicName>
         <depthImageCameraInfoTopicName>depth/camera_info</depthImageCameraInfoTopicName>
         <frameName>camera_top_color_optical_frame</frameName>
+        <baseline>0.1</baseline>
+        <distortion_k1>0.0</distortion_k1>
+        <distortion_k2>0.0</distortion_k2>
+        <distortion_k3>0.0</distortion_k3>
+        <distortion_t1>0.0</distortion_t1>
+        <distortion_t2>0.0</distortion_t2>
+        <pointCloudCutoff>0.4</pointCloudCutoff>
+      </plugin>
+    </sensor>
+  </gazebo>
+  <joint name="camera_right_rgb_joint" type="fixed">
+    <origin xyz="-0.48769570892652475 0.6173557198083176 1.2749729084453454" rpy="-0.01007081150556496 0.3626305139780482 -0.7073242087231996"/>
+    <parent link="world"/>
+    <child link="camera_right_link"/>
+  </joint>
+  <link name="camera_right_link">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+      <mass value="0.564"/>
+      <inertia ixx="0.003881243" ixy="0.0" ixz="0.0" iyy="0.00049894" iyz="0.0" izz="0.003879257"/>
+    </inertial>
+    <visual>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 3.141592653589793 -1.5707963267948966"/>
+      <geometry>
+        <mesh filename="package://larcc_cell_description/meshes/sensors/astra2.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <geometry>
+        <box size="0.04 0.165 0.03"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="camera_right_joint" type="fixed">
+    <origin xyz="0.0 0.01 0.0" rpy="1.5707963267948966 3.141592653589793 1.5707963267948966"/>
+    <parent link="camera_right_link"/>
+    <child link="camera_right_rgb_optical_frame"/>
+  </joint>
+  <link name="camera_right_rgb_optical_frame"/>
+  <joint name="camera_right_depth_joint" type="fixed">
+    <origin xyz="0.0 0.037 0.0" rpy="1.5707963267948966 3.141592653589793 1.5707963267948966"/>
+    <parent link="camera_right_link"/>
+    <child link="camera_right_depth_optical_frame"/>
+  </joint>
+  <link name="camera_right_depth_optical_frame"/>
+  <gazebo reference="camera_right_depth_frame">
+    <sensor name="camera" type="depth">
+      <always_on>true</always_on>
+      <update_rate>8.0</update_rate>
+      <camera>
+        <horizontal_fov>1.0471975511965976</horizontal_fov>
+        <image>
+          <format>B8G8R8</format>
+          <width>640</width>
+          <height>480</height>
+        </image>
+        <clip>
+          <near>0.10</near>
+          <far>8.0</far>
+        </clip>
+      </camera>
+      <plugin filename="libgazebo_ros_openni_kinect.so" name="camera_right_camera_controller">
+        <cameraName>camera_right</cameraName>
+        <alwaysOn>true</alwaysOn>
+        <updateRate>0</updateRate>
+        <imageTopicName>color/image_raw</imageTopicName>
+        <depthImageTopicName>depth/image_raw</depthImageTopicName>
+        <pointCloudTopicName>depth/points</pointCloudTopicName>
+        <cameraInfoTopicName>color/camera_info</cameraInfoTopicName>
+        <depthImageCameraInfoTopicName>depth/camera_info</depthImageCameraInfoTopicName>
+        <frameName>camera_right_color_optical_frame</frameName>
         <baseline>0.1</baseline>
         <distortion_k1>0.0</distortion_k1>
         <distortion_k2>0.0</distortion_k2>
@@ -1199,7 +1271,7 @@
   </joint>
   <link name="table_base"/>
   <joint name="world_to_table_base" type="fixed">
-    <origin xyz="0.1 0.95 0.0" rpy="0.0 0.0 -1.5707963267948966"/>
+    <origin xyz="0.1 0.94875 0.0" rpy="0.0 0.0 -1.5707963267948966"/>
     <parent link="world"/>
     <child link="table_base"/>
   </joint>
@@ -1368,175 +1440,51 @@
     <parent link="table_base"/>
     <child link="leg4_table_base"/>
   </joint>
-  <link name="table_front"/>
-  <joint name="table_base_to_table_front" type="fixed">
-    <origin xyz="0.8 0.0 0.0" rpy="0.0 0.0 0.0"/>
+  <link name="table_beam">
+    <inertial>
+      <origin xyz="0.0 0.0 -39.626" rpy="0.0 0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="0.1" ixy="0.0" ixz="0.0" iyy="0.1" iyz="0.0" izz="0.01"/>
+    </inertial>
+    <visual>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <geometry>
+        <mesh filename="package://larcc_cell_description/meshes/minitec_45x45_1500.STL" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="grey"/>
+    </visual>
+    <collision>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <geometry>
+        <box size="0.045 0.045 1.5"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="table_base_to_table_beam" type="fixed">
+    <origin xyz="0.305 -0.625 0.0025" rpy="1.5707963267948966 0.0 0.0"/>
     <parent link="table_base"/>
-    <child link="table_front"/>
+    <child link="table_beam"/>
   </joint>
-  <link name="tabletop_table_front">
-    <inertial>
-      <origin xyz="0.0 0.0 -0.015" rpy="0.0 0.0 0.0"/>
-      <mass value="1.0"/>
-      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
-    </inertial>
-    <visual>
-      <origin xyz="0.0 0.0 -0.015" rpy="0.0 0.0 0.0"/>
-      <geometry>
-        <box size="0.7 1.2 0.015"/>
-      </geometry>
-      <material name="grey"/>
-    </visual>
-    <collision name="base_link_collision">
-      <origin xyz="0.0 0.0 -0.015" rpy="0.0 0.0 0.0"/>
-      <geometry>
-        <box size="0.7 1.2 0.015"/>
-      </geometry>
-    </collision>
-  </link>
-  <gazebo reference="tabletop_table_front">
-    <material>Gazebo/Grey</material>
-    <mu1>50.0</mu1>
-    <mu2>50.0</mu2>
-    <kp>1000000.0</kp>
-    <kd>1.0</kd>
-    <selfCollide>false</selfCollide>
-  </gazebo>
-  <joint name="table_front_to_tabletop_table_front" type="fixed">
-    <origin xyz="0.0 0.0 0.75" rpy="0.0 0.0 0.0"/>
-    <parent link="table_front"/>
-    <child link="tabletop_table_front"/>
-  </joint>
-  <link name="leg1_table_front">
-    <inertial>
-      <origin xyz="0.0 0.0 0.359" rpy="0.0 0.0 0.0"/>
-      <mass value="1.0"/>
-      <inertia ixx="0.1" ixy="0.0" ixz="0.0" iyy="0.1" iyz="0.0" izz="0.01"/>
-    </inertial>
-    <visual>
-      <origin xyz="0.0 0.0 0.359" rpy="0.0 0.0 0.0"/>
-      <geometry>
-        <cylinder radius="0.02" length="0.735"/>
-      </geometry>
-      <material name="grey"/>
-    </visual>
+  <link name="virtual_ceiling">
     <collision>
-      <origin xyz="0.0 0.0 0.375" rpy="0.0 0.0 0.0"/>
+      <origin xyz="0.0 0.0 0.05" rpy="0.0 0.0 0.0"/>
       <geometry>
-        <cylinder radius="0.02" length="0.734"/>
+        <box size="5.0 5.0 0.1"/>
       </geometry>
     </collision>
-  </link>
-  <gazebo reference="leg1_table_front">
-    <material>Gazebo/Grey</material>
-    <mu1>1000.0</mu1>
-    <mu2>1000.0</mu2>
-    <kp>10000000.0</kp>
-    <kd>1.0</kd>
-    <selfCollide>true</selfCollide>
-  </gazebo>
-  <joint name="table_front_to_leg1" type="fixed">
-    <origin xyz="-0.32999999999999996 0.58 0.0" rpy="0.0 0.0 0.0"/>
-    <parent link="table_front"/>
-    <child link="leg1_table_front"/>
-  </joint>
-  <link name="leg2_table_front">
-    <inertial>
-      <origin xyz="0.0 0.0 0.359" rpy="0.0 0.0 0.0"/>
-      <mass value="1.0"/>
-      <inertia ixx="0.1" ixy="0.0" ixz="0.0" iyy="0.1" iyz="0.0" izz="0.01"/>
-    </inertial>
     <visual>
-      <origin xyz="0.0 0.0 0.359" rpy="0.0 0.0 0.0"/>
+      <origin xyz="0.0 0.0 0.05" rpy="0.0 0.0 0.0"/>
       <geometry>
-        <cylinder radius="0.02" length="0.735"/>
+        <box size="5.0 5.0 0.1"/>
       </geometry>
-      <material name="grey"/>
+      <material name="red">
+        <color rgba="0.5 0.0 0.0 0.0"/>
+      </material>
     </visual>
-    <collision>
-      <origin xyz="0.0 0.0 0.375" rpy="0.0 0.0 0.0"/>
-      <geometry>
-        <cylinder radius="0.02" length="0.734"/>
-      </geometry>
-    </collision>
   </link>
-  <gazebo reference="leg2_table_front">
-    <material>Gazebo/Grey</material>
-    <mu1>1000.0</mu1>
-    <mu2>1000.0</mu2>
-    <kp>10000000.0</kp>
-    <kd>1.0</kd>
-    <selfCollide>true</selfCollide>
-  </gazebo>
-  <joint name="table_front_to_leg2" type="fixed">
-    <origin xyz="0.32999999999999996 0.58 0.0" rpy="0.0 0.0 0.0"/>
-    <parent link="table_front"/>
-    <child link="leg2_table_front"/>
-  </joint>
-  <link name="leg3_table_front">
-    <inertial>
-      <origin xyz="0.0 0.0 0.359" rpy="0.0 0.0 0.0"/>
-      <mass value="1.0"/>
-      <inertia ixx="0.1" ixy="0.0" ixz="0.0" iyy="0.1" iyz="0.0" izz="0.01"/>
-    </inertial>
-    <visual>
-      <origin xyz="0.0 0.0 0.359" rpy="0.0 0.0 0.0"/>
-      <geometry>
-        <cylinder radius="0.02" length="0.735"/>
-      </geometry>
-      <material name="grey"/>
-    </visual>
-    <collision>
-      <origin xyz="0.0 0.0 0.375" rpy="0.0 0.0 0.0"/>
-      <geometry>
-        <cylinder radius="0.02" length="0.734"/>
-      </geometry>
-    </collision>
-  </link>
-  <gazebo reference="leg3_table_front">
-    <material>Gazebo/Grey</material>
-    <mu1>1000.0</mu1>
-    <mu2>1000.0</mu2>
-    <kp>10000000.0</kp>
-    <kd>1.0</kd>
-    <selfCollide>true</selfCollide>
-  </gazebo>
-  <joint name="table_front_to_leg3" type="fixed">
-    <origin xyz="0.32999999999999996 -0.58 0.0" rpy="0.0 0.0 0.0"/>
-    <parent link="table_front"/>
-    <child link="leg3_table_front"/>
-  </joint>
-  <link name="leg4_table_front">
-    <inertial>
-      <origin xyz="0.0 0.0 0.359" rpy="0.0 0.0 0.0"/>
-      <mass value="1.0"/>
-      <inertia ixx="0.1" ixy="0.0" ixz="0.0" iyy="0.1" iyz="0.0" izz="0.01"/>
-    </inertial>
-    <visual>
-      <origin xyz="0.0 0.0 0.359" rpy="0.0 0.0 0.0"/>
-      <geometry>
-        <cylinder radius="0.02" length="0.735"/>
-      </geometry>
-      <material name="grey"/>
-    </visual>
-    <collision>
-      <origin xyz="0.0 0.0 0.375" rpy="0.0 0.0 0.0"/>
-      <geometry>
-        <cylinder radius="0.02" length="0.734"/>
-      </geometry>
-    </collision>
-  </link>
-  <gazebo reference="leg4_table_front">
-    <material>Gazebo/Grey</material>
-    <mu1>1000.0</mu1>
-    <mu2>1000.0</mu2>
-    <kp>10000000.0</kp>
-    <kd>1.0</kd>
-    <selfCollide>true</selfCollide>
-  </gazebo>
-  <joint name="table_front_to_leg4" type="fixed">
-    <origin xyz="-0.32999999999999996 -0.58 0.0" rpy="0.0 0.0 0.0"/>
-    <parent link="table_front"/>
-    <child link="leg4_table_front"/>
+  <joint name="fixed_ceiling_joint" type="fixed">
+    <origin xyz="0.0 0.0 1.8" rpy="0.0 0.0 0.0"/>
+    <parent link="world"/>
+    <child link="virtual_ceiling"/>
   </joint>
 </robot>

@@ -88,7 +88,7 @@ Visualization Manager:
     Value: true
   - Class: rviz/Image
     Enabled: true
-    Image Topic: /usb_cam_behind/image_raw/c000/labeled2d
+    Image Topic: /camera_behind/color/image_raw/c000/labeled2d
     Max Value: 1
     Median window: 5
     Min Value: 0
@@ -100,7 +100,19 @@ Visualization Manager:
     Value: false
   - Class: rviz/Image
     Enabled: true
-    Image Topic: /usb_cam_top/image_raw/c000/labeled2d
+    Image Topic: /camera_right/color/image_raw/c000/labeled2d
+    Max Value: 1
+    Median window: 5
+    Min Value: 0
+    Name: camera_right-Labels-Image
+    Normalize Range: true
+    Queue Size: 2
+    Transport Hint: raw
+    Unreliable: false
+    Value: false
+  - Class: rviz/Image
+    Enabled: true
+    Image Topic: /camera_top/color/image_raw/c000/labeled2d
     Max Value: 1
     Median window: 5
     Min Value: 0

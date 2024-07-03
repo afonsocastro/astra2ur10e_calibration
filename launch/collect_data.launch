@@ -89,6 +89,12 @@
         required="true"
         output="screen"/>
     
+    <!-- Sensor camera_right rgb_labeler -->
+    <node name="camera_right_labeler" pkg="atom_calibration" type="rgb_labeler"
+        args="-cfg $(arg config_file) -sn camera_right"
+        required="true"
+        output="screen"/>
+    
 
     <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
     <!-- Start automatic data collector node -->
